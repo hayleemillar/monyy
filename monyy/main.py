@@ -1,6 +1,7 @@
+from flask import render_template
 from monyy import app
 
 @app.route("/")
 def hello():
-    return "Hello mlemlem!"
+    return render_template("index.html") 
 

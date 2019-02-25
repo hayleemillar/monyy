@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title>Monyy</title>
+    <script src="../static/js/Chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+    <body>
+
+        <!-----------------------
+            SIDEBAR NAVIGATION
+        ------------------------->
+        <div class="sidenav">
+
+            <!-- CASH / BANK ACCOUNTS -->
+            <a href="#cash">
+                <img src="../static/img/bank.png" alt="Bank">
+                 Cash
+             </a>
+            <!-- Top 3 bank accounts in descending order by amount of cash should be displayed.
+                 When clicked, they should bring the user to the part of the web page that displays bank account information.
+                 I'm thinking there's a drop down menu the user can use to select an account.
+                 Then, the graph/other information will change accordingly. -->
+            <button type="button">Stub Acct 1 (...1172)</button>
+            <button type="button">Stub Acct 2 (...3428)</button>
+            <button type="button">Stub Acct 3 (...4235)</button>
+            <!-- When view all is clicked, the menu should expand to display all accts.
+                 When expanded, a "Collapse" button should display underneath all accts.
+                 When collapsed, menu should return to top 3 -->
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Bank Account</button>
+            <br/>
+
+            <!-- STOCKS -->
+            <a href="#stocks">
+                <img src="../static/img/chart.png" alt="Stock Chart">
+                 Stocks</a>
+            <button type="button">STUB1</button>
+            <button type="button">STUB2</button>
+            <button type="button">STUB3</button>
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Stock</button>
+            <br/>
+
+            <!-- BONDS -->
+            <a href="#bonds">
+                <img src="../static/img/bonds.png" alt="Bond"> 
+                Bonds
+            </a>
+            <button type="button">Bond1</button>
+            <button type="button">Bond2</button>
+            <button type="button">Bond3</button>
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Bond</button>
+            <br/>
+
+            <!-- REAL ESTATE -->
+            <a href="#realestate">
+                <img src="../static/img/realestate.png" alt="Real Estate"> 
+                Real Estate
+            </a>
+            <button type="button">Address1</button>
+            <button type="button">Address2</button>
+            <button type="button">Address3</button>
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Real Estate</button>
+            <br/>
+
+            <!-- CRYPTOCURRENCY -->
+            <a href="#cryptocurrency">
+                <img src="../static/img/bitcoin.png" alt="Bitcoin"> 
+                Cryptocurrency
+            </a>
+            <button type="button">Crypto1</button>
+            <button type="button">Crypto2</button>
+            <button type="button">Crypto3</button>
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Cryptocurrency</button>
+            <br/>
+
+            <!-- DEBTS -->
+            <a href="#debts">
+                <img src="../static/img/debt.png" alt="Debt">
+                 Debt</a>
+            <button type="buton">Debt1</button>
+            <button type="buton">Debt2</button>
+            <button type="buton">Debt3</button>
+            <center>
+            <button type="button" style="padding: 6px 8px 6px 0px;">View All</button>
+            </center>
+            <button type="button">+ Add Debt</button>
+            <br/>
+            <br/>
+        </div>
+
+
+        <!---------------------
+            SUMMARY SECTIONS
+        ----------------------->
+        <div class="main">
+
+            <h2>Welcome, STUBdude.</h2>
+
+            <div class="display-countworth">
+                <h1> STUB# DAYS UNTIL BANKRUPTCY</h1>
+            </div>
+
+            <div class="display-countworth">
+                <h1> NET WORTH: $STUB#</h1>
+            </div>
+
+            <center>
+                <div class="chart">
+                    <canvas id="chart-networth" width="800" height="500"></canvas>
+                </div>
+            </center>
+
+            <h1>Cash</h1>
+
+            <select>
+                <option value="acct1">Stub Acct 1 (...1172)</option>
+                <option value="acct2">Stub Acct 2 (...3428)</option>
+                <option value="acct3">Stub Acct 3 (...4235)</option>
+            </select>
+
+            <br/>
+
+            <h2>Stocks</h2>
+
+            <select>
+                <option value="stock1">STUB1</option>
+                <option value="stock2">STUB2</option>
+                <option value="stock3">STUB3</option>
+            </select>
+
+            <br/>
+
+            <h2>Bonds</h2>
+
+            <select>
+                <option value="bond1">Bond1</option>
+                <option value="bond2">Bond2</option>
+                <option value="stock3">STUB3</option>
+            </select>
+
+            <h2>Real Estate</h2>
+
+            <select>
+                <option value="estate1">Address1</option>
+                <option value="estate2">Address2</option>
+                <option value="estate3">Address3</option>
+            </select>
+
+            <h2>Cryptocurrency</h2>
+
+            <select>
+                <option value="crypto1">Crypto1</option>
+                <option value="crypto2">Crypto2</option>
+                <option value="crypto3">Crypto3</option>
+            </select>
+
+            <h2>Debt</h2>
+
+            <select>
+                <option value="debt1">Debt1</option>
+                <option value="debt2">Debt2</option>
+                <option value="debt3">Debt3</option>
+            </select>
+
+
+    <script src="../static/js/monyy-script.js"></script>
+       
+    </body>
+</html> 
